@@ -1,0 +1,377 @@
+  /* Common Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f2f2f2;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  /* Dashboard Styles */
+  .content {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 220px;
+    width: calc(100% - 220px); /* Adjusted width to accommodate sidebar */
+  }
+
+  .content h2{
+    margin-top: 50px;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .line-chart-header {
+    margin-top: 50px;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  /* Tracker Styles */
+  form {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-width: 300px;
+    margin: auto;
+    text-align: left;
+  }
+  
+  input[type="date"],
+  input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  }
+  
+/* Sidebar Styles */
+.sidebar {
+    background-color: #92005a;
+    color: #fff;
+    width: 200px;
+    height: 100vh;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar h1 {
+    font-size: 35px;
+    margin-bottom: 300px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar li {
+    margin-bottom: 15px;
+  }
+  
+  .sidebar li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-size: 20px;
+  }
+  
+/* Top Bar Styles */
+.top-bar {
+  background-color: #333;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  margin-left: 220px;
+  padding: 13px;
+  display: flex;
+  width: calc(100% - 220px);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-bar-left {
+  display: flex;
+  align-items: center;
+}
+
+.page-title {
+  font-size: 20px;
+  margin-left: 50px;
+}
+
+.top-bar-right {
+  display: flex;
+  align-items: center;
+}
+
+.top-bar a {
+  font-size: 20px;
+  color: #92005a;
+  margin-right: 75px;
+}
+
+/* Login Container */
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.login-form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.login-container h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.login-form input[type="username"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+button:focus {
+  outline: none;
+}
+
+#create-account-button {
+  background-color: #f44336;
+}
+
+#create-account-button:hover {
+  background-color: #d32f2f;
+}
+
+/* Create Account Container */
+.create-account-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.create-account-form {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.create-account-form h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.create-account-form input[type="username"],
+.create-account-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.create-account-form button[type="submit"],
+.create-account-form button[type="button"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.create-account-form button[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.create-account-form button[type="submit"]:focus {
+  outline: none;
+}
+
+.create-account-form button[type="button"] {
+  background-color: #f44336;
+}
+
+.create-account-form button[type="button"]:hover {
+  background-color: #d32f2f;
+}
+
+
+  /* Extra Tracker Page Items
+   .food-row {
+    Your food-row styles here 
+  }
+  
+  .food-input {
+     Your food-input styles here 
+  }
+  
+  .calorie-input {
+ Your calorie-input styles here 
+  }
+  
+  .add-more {
+     Your add-more styles here 
+  }
+  
+  .add-more span {
+    Your add-more span styles here
+  } */
+  
+  /* Progress Page */
+  .table-container {
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  .table-container p{
+    font-size: 20px;
+    margin-left: 50px;
+  }
+
+  .goals-section h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .current-goals-section {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+
+  .current-goals-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .current-goals-section p {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+
+  .content h3{
+    margin-top: 16px;
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+
+  /* Tracker Page */
+  .content p{
+    font-size: 20px;
+    margin-left: 25px;
+  }
+  
+  .calorie-total {
+    display: block;
+    font-size: 25px;
+    padding: 8px;
+    margin-top: 10px;
+  }
+  
+  /* Weight Input Field */
+  form div label {
+    display: block;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  form div input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Additional Food Rows */
+  .food-row:not(:last-child) {
+    margin-bottom: 10px;
+  }
